@@ -350,6 +350,5 @@ void loop() {
   digitalWrite(LED_Green, LOW);
   Rotation_Speed = 0.0f;
   Stop(Rotation_Speed, Last_Rotation_Direction);
-
 }
 
