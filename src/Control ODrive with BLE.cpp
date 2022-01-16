@@ -302,13 +302,13 @@ void loop() {
       //Serial.println("in go");
       
       Serial.print("Velocity: ");
-      Serial.print(odrive.GetVelocity(0));
-      Serial.print(", ");
-      Serial.print("Position: ");
-      Serial.print(odrive.GetPosition(0));
-      Serial.print(", ");
-      Serial.print("Counts: ");
-      Serial.println(odrive.GetPositionCounts(0));
+      Serial.println(odrive.GetVelocity(0));
+      //Serial.print(", ");
+      //Serial.print("Position: ");
+      //Serial.print(odrive.GetPosition(0));
+      //Serial.print(", ");
+      //Serial.print("Counts: ");
+      //Serial.println(odrive.GetPositionCounts(0));
   
       Go(Rotation_Speed, Rotation_Direction_to_float, Start_time, Measurment_Time_to_long);
     }
@@ -321,13 +321,13 @@ void loop() {
     Last_Rotation_Direction = Rotation_Direction_to_float;
     myRamp.go(0.0f, Rate - 850);
     Serial.print("Velocity: ");
-    Serial.print(odrive.GetVelocity(0));
-    Serial.print(", ");
-    Serial.print("Position: ");
-    Serial.print(odrive.GetPosition(0));
-    Serial.print(", ");
-    Serial.print("Counts: ");
-    Serial.println(odrive.GetPositionCounts(0));
+    Serial.println(odrive.GetVelocity(0));
+    //Serial.print(", ");
+    //Serial.print("Position: ");
+    //Serial.print(odrive.GetPosition(0));
+    //Serial.print(", ");
+    //Serial.print("Counts: ");
+    //Serial.println(odrive.GetPositionCounts(0));
    }
   
   while(digitalRead(CW_Button)){
@@ -337,13 +337,13 @@ void loop() {
     Last_Rotation_Direction = Rotation_Direction_to_float;
     myRamp.go(0.0f, Rate - 850);
     Serial.print("Velocity: ");
-    Serial.print(odrive.GetVelocity(0));
-    Serial.print(", ");
-    Serial.print("Position: ");
-    Serial.print(odrive.GetPosition(0));
-    Serial.print(", ");
-    Serial.print("Counts: ");
-    Serial.println(odrive.GetPositionCounts(0));
+    Serial.println(odrive.GetVelocity(0));
+    //Serial.print(", ");
+    //Serial.print("Position: ");
+    //Serial.print(odrive.GetPosition(0));
+    //Serial.print(", ");
+    //Serial.print("Counts: ");
+    //Serial.println(odrive.GetPositionCounts(0));
   }
   
   digitalWrite(LED_Red, LOW);
